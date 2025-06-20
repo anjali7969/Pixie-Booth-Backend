@@ -39,3 +39,4 @@ const upload = multer({
 }).single("profilePicture"); // This must match frontend field name
 
 module.exports = upload;
+// Usage in routes
