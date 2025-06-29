@@ -16,6 +16,8 @@ const saveImage = async (req, res) => {
         res.status(500).json({ success: false, message: "Failed to save image" });
     }
 };
+// 🔐 Ensure user is authenticated
+
 
 
 
