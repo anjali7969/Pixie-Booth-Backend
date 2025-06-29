@@ -7,7 +7,7 @@ const multer = require("multer");
 const { authenticateToken } = require("../middleware/authMiddleware");
 const User = require("../model/User");
 
-// ✅ Ensure profile image upload directory exists
+// ✅ Ensure upload directory exists
 const uploadDir = path.join(__dirname, "../public/uploads/profile");
 if (!fs.existsSync(uploadDir)) {
     fs.mkdirSync(uploadDir, { recursive: true });
