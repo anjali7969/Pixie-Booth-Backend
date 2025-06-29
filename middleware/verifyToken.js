@@ -1,5 +1,7 @@
 const jwt = require("jsonwebtoken");
 
+// Middleware to verify JWT token
+// This function should be used in routes that require authentication
 const verifyToken = (req, res, next) => {
     const authHeader = req.headers.authorization;
 
