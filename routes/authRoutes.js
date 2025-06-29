@@ -1,5 +1,5 @@
 const express = require("express");
-const router = express.Router();
+const router = express.Router(); // Import the controller functions
 
 const { registerUser, loginUser, changePassword } = require("../controller/authController");
 const verifyToken = require("../middleware/verifyToken"); // this must be a function
@@ -14,3 +14,5 @@ router.post("/login", loginUser);
 router.put("/change-password", verifyToken, changePassword); // make sure both are functions
 
 module.exports = router;
+
+// Export the router to use in the main app
