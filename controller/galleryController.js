@@ -20,8 +20,6 @@ const saveImage = async (req, res) => {
 
 
 
-
-
 // Get images for logged-in user
 const getUserImages = async (req, res) => {
     try {
@@ -32,4 +30,4 @@ const getUserImages = async (req, res) => {
     }
 };
 
-module.exports = { saveImage, getUserImages };
+module.exports = { saveImage, getUserImages };  // Export the controller functions
