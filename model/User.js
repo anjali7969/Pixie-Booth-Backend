@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 // User Schema
 
+// This schema defines the structure of user documents in MongoDB
 const userSchema = new mongoose.Schema(
     {
         name: {
