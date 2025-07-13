@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+// Gallery Schema
 const gallerySchema = new mongoose.Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
